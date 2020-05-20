@@ -100,59 +100,105 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="card mb-3">
-                <div class="card-header">
-                  Menu
+        <div class="col-md-10 mx-auto">
+          <div class="card mb-3">
+            <div class="card-header">
+              <span>Pengguna</span>
+              <a href="/admin-users-form.html" class="btn btn-sm btn-secondary"
+                >Tambah</a
+              >
+              <div class="float-right">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control form-control-sm text-center"
+                    placeholder="Cari"
+                  />
+                  <div class="input-group-append">
+                    <button class="btn btn-info btn-sm" type="submit">
+                      <i class="fas fa-search"></i>
+                    </button>
+                    <a href="#" class="btn btn-info btn-sm"
+                      ><i class="fas fa-eraser"></i
+                    ></a>
+                  </div>
                 </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                    <a href="/profile.html">Profile</a>
-                  </li>
-                  <li class="list-group-item">
-                    <a href="/orders.html">Orders</a>
-                  </li>
-                </ul>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-9">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="card">
-                <div class="card-header">
-                  Profile
-                </div>
-                <div class="card-body">
-                  <form action="">
-                    <div class="form-group">
-                      <label for="">Nama</label>
-                      <input type="text" class="form-control" />
-                      <small id="" class="form-text text-danger"
-                        >Nama harus diisi.</small
-                      >
-                    </div>
-                    <div class="form-group">
-                      <label for="">E-Mail</label>
-                      <input type="email" class="form-control" />
-                    </div>
-                    <div class="form-group">
-                      <label for="">Password</label>
-                      <input type="password" class="form-control" />
-                    </div>
-                    <div class="form-group">
-                      <label for="">Foto</label> <br />
-                      <input type="file" name="" id="" />
-                    </div>
-                    <button type="submit" class="btn btn-primary">
-                      Simpan
-                    </button>
-                  </form>
-                </div>
-              </div>
+            <div class="card-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">User</th>
+                    <th scope="col">E-Mail</th>
+                    <th scope="col">Role</th>
+                    <th scope="col">Status</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>
+                      <p>
+                        <img src="https://placehold.co/70x70" alt="" />
+                        Admin
+                      </p>
+                    </td>
+                    <td>admin@mail.com</td>
+                    <td>Admin</td>
+                    <td>Aktif</td>
+                    <td>
+                      <a href="javascript:void(0);" class="action-icon"
+                        ><i class="fas fa-edit text-info"></i
+                      ></a>
+                      <a
+                        href="javascript:void(0);"
+                        class="action-icon"
+                        onclick="deleteConfirm()"
+                        ><i class="fas fa-trash text-danger"></i
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>
+                      <p>
+                        <img src="https://placehold.co/70x70" alt="" />
+                        Member
+                      </p>
+                    </td>
+                    <td>member@mail.com</td>
+                    <td>Member</td>
+                    <td>Aktif</td>
+                    <td>
+                      <a href="javascript:void(0);" class="action-icon"
+                        ><i class="fas fa-edit text-info"></i
+                      ></a>
+                      <a
+                        href="javascript:void(0);"
+                        class="action-icon"
+                        onclick="deleteConfirm()"
+                        ><i class="fas fa-trash text-danger"></i
+                      ></a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#">Previous</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
