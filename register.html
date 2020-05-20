@@ -12,7 +12,7 @@
       content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
     />
     <meta name="generator" content="Jekyll v3.8.5" />
-    <title>Login - Codeigniter E-Commerce</title>
+    <title>Register - Codeigniter E-Commerce</title>
 
     <link
       rel="canonical"
@@ -109,10 +109,22 @@
         <div class="col-md-8 mx-auto">
           <div class="card">
             <div class="card-header">
-              Login
+              Register
             </div>
             <div class="card-body">
               <form method="post" action="">
+                <div class="form-group">
+                  <label for="nama">Nama</label>
+                  <input
+                    id="nama"
+                    class="form-control"
+                    type="nama"
+                    name=""
+                    required
+                    autofocus
+                  />
+                  <small class="form-text text-danger">Nama Harus Diisi!</small>
+                </div>
                 <div class="form-group">
                   <label for="email">Email</label>
                   <input
@@ -121,7 +133,6 @@
                     type="email"
                     name=""
                     required
-                    autofocus
                   />
                   <small class="form-text text-danger"
                     >E-mail Harus Diisi!</small
@@ -140,7 +151,20 @@
                     >Password Harus Diisi!</small
                   >
                 </div>
-                <button type="submit" class="btn btn-primary">Login</button>
+                <div class="form-group">
+                  <label for="password">Konfirmasi Password</label>
+                  <input
+                    id="password"
+                    class="form-control"
+                    type="password"
+                    name=""
+                    required
+                  />
+                  <small class="form-text text-danger"
+                    >Password Harus Sama!</small
+                  >
+                </div>
+                <button type="submit" class="btn btn-primary">Register</button>
               </form>
             </div>
           </div>
