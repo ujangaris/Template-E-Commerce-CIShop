@@ -10,15 +10,21 @@
     <meta name="author" content="IDStack" />
     <title>CIShop - Codeigniter E-Commerce</title>
 
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/4.3/examples/navbar-fixed/"
+    />
+
     <!-- Bootstrap core CSS -->
     <link
       href="/assets/libs/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="/assets/libs/fontawesome/css/all.min.css" />
+    <!-- FontAwesome CSS-->
+    <link rel="stylesheet" href="/assets/libs/fontawesome/css/all.css" />
+
     <!-- Custom styles for this template -->
-    <link href="/assets/css/app.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/app.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -57,11 +63,12 @@
                 >Manage</a
               >
               <div class="dropdown-menu" aria-labelledby="dropdown-1">
-                <a class="dropdown-item" href="/admin-category.html"
-                  >Kategori</a
+                <a href="/admin-category.html" class="dropdown-item"
+                  >Kategory</a
                 >
-                <a class="dropdown-item" href="/admin-product.html">Produk</a>
-                <a class="dropdown-item" href="/admin-order.html">Orders</a>
+                <a href="/admin-product.html" class="dropdown-item">Produk</a>
+                <a href="/admin-order.html" class="dropdown-item">Order</a>
+                <a href="/admin-users.html" class="dropdown-item">Pengguna</a>
               </div>
             </li>
           </ul>
@@ -150,15 +157,20 @@
                     <td>Admin</td>
                     <td>Aktif</td>
                     <td>
-                      <a href="javascript:void(0);" class="action-icon"
-                        ><i class="fas fa-edit text-info"></i
-                      ></a>
-                      <a
-                        href="javascript:void(0);"
-                        class="action-icon"
-                        onclick="deleteConfirm()"
-                        ><i class="fas fa-trash text-danger"></i
-                      ></a>
+                      <a href="#">
+                        <button class="btn btn-sm">
+                          <i class="fas fa-edit text-info"></i>
+                        </button>
+                      </a>
+                      <a href="#">
+                        <button
+                          class="btn btn-sm"
+                          type="submit"
+                          onclick="return confirm('Are you sure?');"
+                        >
+                          <i class="fas fa-trash text-danger"></i>
+                        </button>
+                      </a>
                     </td>
                   </tr>
                   <tr>
@@ -173,15 +185,20 @@
                     <td>Member</td>
                     <td>Aktif</td>
                     <td>
-                      <a href="javascript:void(0);" class="action-icon"
-                        ><i class="fas fa-edit text-info"></i
-                      ></a>
-                      <a
-                        href="javascript:void(0);"
-                        class="action-icon"
-                        onclick="deleteConfirm()"
-                        ><i class="fas fa-trash text-danger"></i
-                      ></a>
+                      <a href="#">
+                        <button class="btn btn-sm">
+                          <i class="fas fa-edit text-info"></i>
+                        </button>
+                      </a>
+                      <a href="#">
+                        <button
+                          class="btn btn-sm"
+                          type="submit"
+                          onclick="return confirm('Are you sure ?');"
+                        >
+                          <i class="fas fa-trash text-danger"></i>
+                        </button>
+                      </a>
                     </td>
                   </tr>
                 </tbody>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="CIShop - Simple Codeigniter E-Commerce" />
+    <meta name="author" content="IDStack" />
+    <title>CIShop - Codeigniter E-Commerce</title>
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="/assets/libs/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="/assets/libs/fontawesome/css/all.min.css" />
+    <!-- Custom styles for this template -->
+    <link href="/assets/css/app.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">CIShop</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar-1"
+          aria-controls="navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbar-1"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="/"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdown-1"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Manage</a
+              >
+              <div class="dropdown-menu" aria-labelledby="dropdown-1">
+                <a href="/admin-category.html" class="dropdown-item"
+                  >Kategory</a
+                >
+                <a href="/admin-product.html" class="dropdown-item">Produk</a>
+                <a href="/admin-order.html" class="dropdown-item">Order</a>
+                <a href="/admin-users.html" class="dropdown-item">Pengguna</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/cart.html"
+                ><i class="fas fa-shopping-cart"></i> Cart(0)</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/register.html">Register</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdown-1"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Admin</a
+              >
+              <div class="dropdown-menu" aria-labelledby="dropdown-1">
+                <a class="dropdown-item" href="/profile.html">Profile</a>
+                <a class="dropdown-item" href="/orders.html">Orders</a>
+                <a class="dropdown-item" href="#">Logout</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <div class="card mb-3">
+            <div class="card-header">
+              <span>Tambah Pengguna</span>
+            </div>
+            <div class="card-body">
+              <form action="">
+                <div class="form-group">
+                  <label for="">Nama</label>
+                  <input type="text" class="form-control" />
+                  <small id="" class="form-text text-danger"
+                    >Nama harus diisi.</small
+                  >
+                </div>
+                <div class="form-group">
+                  <label for="">E-Mail</label>
+                  <input type="email" class="form-control" />
+                  <small id="" class="form-text text-danger"
+                    >Email harus diisi.</small
+                  >
+                </div>
+                <div class="form-group">
+                  <label for="">Password</label>
+                  <input type="password" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label for="">Role</label>
+                  <select class="form-control">
+                    <option>Admin</option>
+                    <option>Member</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="">Status</label> <br />
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="inlineRadio1"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="inlineRadio1"
+                      >Aktif</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="inlineRadio2"
+                      value="0"
+                    />
+                    <label class="form-check-label" for="inlineRadio2"
+                      >Tidak Aktif</label
+                    >
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="">Photo</label> <br />
+                  <input type="file" name="" id="" />
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/assets/libs/jquery/jquery-3.5.1.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>'
+        );
+    </script>
+    <script src="/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

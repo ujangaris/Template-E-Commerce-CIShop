@@ -57,11 +57,12 @@
                 >Manage</a
               >
               <div class="dropdown-menu" aria-labelledby="dropdown-1">
-                <a class="dropdown-item" href="/admin-category.html"
-                  >Kategori</a
+                <a href="/admin-category.html" class="dropdown-item"
+                  >Kategory</a
                 >
-                <a class="dropdown-item" href="/admin-product.html">Produk</a>
-                <a class="dropdown-item" href="/admin-order.html">Logout</a>
+                <a href="/admin-product.html" class="dropdown-item">Produk</a>
+                <a href="/admin-order.html" class="dropdown-item">Order</a>
+                <a href="/admin-users.html" class="dropdown-item">Pengguna</a>
               </div>
             </li>
           </ul>
@@ -103,68 +104,95 @@
         <div class="col-md-10 mx-auto">
           <div class="card mb-3">
             <div class="card-header">
-              <span>Tambah Pengguna</span>
+              <span>Kategori</span>
+              <a
+                href="/admin-category-form.html"
+                class="btn btn-sm btn-secondary"
+                >Tambah</a
+              >
+              <div class="float-right">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control form-control-sm text-center"
+                    placeholder="Cari"
+                  />
+                  <div class="input-group-append">
+                    <button class="btn btn-info btn-sm" type="submit">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="card-body">
-              <form action="">
-                <div class="form-group">
-                  <label for="">Nama</label>
-                  <input type="text" class="form-control" />
-                  <small id="" class="form-text text-danger"
-                    >Nama harus diisi.</small
-                  >
-                </div>
-                <div class="form-group">
-                  <label for="">E-Mail</label>
-                  <input type="email" class="form-control" />
-                  <small id="" class="form-text text-danger"
-                    >Email harus diisi.</small
-                  >
-                </div>
-                <div class="form-group">
-                  <label for="">Password</label>
-                  <input type="password" class="form-control" />
-                </div>
-                <div class="form-group">
-                  <label for="">Role</label>
-                  <select class="form-control">
-                    <option>Admin</option>
-                    <option>Member</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="">Status</label> <br />
-                  <div class="form-check form-check-inline">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="inlineRadioOptions"
-                      id="inlineRadio1"
-                      value="1"
-                    />
-                    <label class="form-check-label" for="inlineRadio1"
-                      >Aktif</label
-                    >
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="inlineRadioOptions"
-                      id="inlineRadio2"
-                      value="0"
-                    />
-                    <label class="form-check-label" for="inlineRadio2"
-                      >Tidak Aktif</label
-                    >
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="">Photo</label> <br />
-                  <input type="file" name="" id="" />
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Slug</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>PHP</td>
+                    <td>php</td>
+                    <td>
+                      <a href="#">
+                        <button class="btn btn-sm">
+                          <i class="fas fa-edit text-info"></i>
+                        </button>
+                      </a>
+                      <a href="#">
+                        <button
+                          class="btn btn-sm"
+                          type="submit"
+                          onclick="return confirm('Are you sure?');"
+                        >
+                          <i class="fas fa-trash text-danger"></i>
+                        </button>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Codeigniter</td>
+                    <td>codeigniter</td>
+                    <td>
+                      <a href="#">
+                        <button class="btn btn-sm">
+                          <i class="fas fa-edit text-info"></i>
+                        </button>
+                      </a>
+                      <a href="#">
+                        <button
+                          class="btn btn-sm"
+                          type="submit"
+                          onclick="return confirm('Are you sure?');"
+                        >
+                          <i class="fas fa-trash text-danger"></i>
+                        </button>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#">Previous</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
